@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CONNECT 4
+        </title>
+        <meta content="text/html; charset=utf-8"
+        http-equiv="content-type">
+        <link href="CSSrho.css"
+        rel="stylesheet"
+        type="text/css">
+        <style>
+            body {
+            background-image: url("background.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            }
+             
+            </style>
+    </head>
+    <body >
+         <div class = "logox" >
+        <img src="Logo.png" width="200" height= auto > <br>  
+         </div>
+        <div class="bodyy dii ">
+          <p id="player-display"> Next Player Turn : <span id="current-player" > </span></p>
+        </div>
+        
+       
+       <div class = "board"> 
+            <div class="row "
+                 id="row-0">
+              <div class="column"
+                   id="row-0-column-0"></div>
+              <div class="column"
+                   id="row-0-column-1"></div>
+              <div class="column"
+                   id="row-0-column-2"></div>
+                   <div class="column"
+                   id="row-0-column-3"></div>
+              <div class="column"
+                   id="row-0-column-4"></div>
+              <div class="column"
+                   id="row-0-column-5"></div>
+                   <div class="column"
+                   id="row-0-column-6"></div>
+            </div>
+            <div class="row parent"
+                 id="row-1">
+              <div class="column"
+                   id="row-1-column-0"></div>
+              <div class="column"
+                   id="row-1-column-1"></div>
+              <div class="column"
+                   id="row-1-column-2"></div>
+                   <div class="column"
+                   id="row-1-column-3"></div>
+              <div class="column"
+                   id="row-1-column-4"></div>
+              <div class="column"
+                   id="row-1-column-5"></div>
+              <div class="column"
+                   id="row-1-column-6"></div>
+                <div class = "image1"  id="winner-display">
+                    
+                         <div class = "rowws roww1"> <p> The winner for this round is <span id="winner-name"></span> 🎉🎉  </p>  </div> 
+                         <div class = "rowws roww2">  New high score is <p><span id="playerScore"></span></p> </div> 
+                    
+                </div> 
+            </div>
+            <div class="row"
+                 id="row-2">
+              <div class="column"
+                   id="row-2-column-0"></div>
+              <div class="column"
+                   id="row-2-column-1"></div>
+              <div class="column"
+                   id="row-2-column-2"></div>
+                   <div class="column"
+                   id="row-2-column-3"></div>
+              <div class="column"
+                   id="row-2-column-4"></div>
+              <div class="column"
+                   id="row-2-column-5"></div>
+                   <div class="column"
+                   id="row-2-column-6"></div>
+            </div>  
+            <div class="row"
+                   id="row-3">
+                <div class="column"
+                     id="row-3-column-0"></div>
+                <div class="column"
+                     id="row-3-column-1"></div>
+                <div class="column"
+                     id="row-3-column-2"></div>
+                     <div class="column"
+                     id="row-3-column-3"></div>
+                <div class="column"
+                     id="row-3-column-4"></div>
+                <div class="column"
+                     id="row-3-column-5"></div>
+                     <div class="column"
+                     id="row-3-column-6"></div>
+            </div>
+            <div class="row"
+                 id="row-4">
+                  <div class="column"
+                       id="row-4-column-0"></div>
+                  <div class="column"
+                       id="row-4-column-1"></div>
+                  <div class="column"
+                       id="row-4-column-2"></div>
+                       <div class="column"
+                       id="row-4-column-3"></div>
+                  <div class="column"
+                       id="row-4-column-4"></div>
+                  <div class="column"
+                       id="row-4-column-5"></div>
+                       <div class="column"
+                       id="row-4-column-6"></div>
+            </div>
+            <div class="row "
+                       id="row-5">
+                    <div class="column"id="row-5-column-0"></div>
+                    <div class="column"
+                         id="row-5-column-1"></div>
+                    <div class="column"
+                         id="row-5-column-2"></div>
+                         <div class="column"
+                         id="row-5-column-3"></div>
+                    <div class="column"
+                         id="row-5-column-4"></div>
+                    <div class="column"
+                         id="row-5-column-5"></div>
+                         <div class="column"
+                         id="row-5-column-6"></div>
+            </div>
+            <div class= "scoreboard scoreboardPlayers" > <br> <b> 🏆<u>SCOREBOARD</u>🏆 
+                 <div class = "roww" > 
+                    <div class = "columnn"> <u> Player </u> </div> <div> <br> </div>
+                    <div class = "columnn"> <u> Score </u> </div> 
+               </div>
+               <div class = "roww"> 
+                    <div class = "columnn" id="winnerrname0" > </div> <div> <br> </div>
+                    <div class = "columnn" id="winnerrScore0" >   </div>
+               </div> 
+               <div class = "roww"> 
+                    <div class = "columnn" id="winnerrname1"  > </div> <div> <br> </div>
+                    <div class = "columnn" id="winnerrScore1">  </div>
+               </div>
+               <div class = "roww"> 
+                    <div class = "columnn" id= "winnerrname2" ></div> <div> <br> </div>
+                    <div class = "columnn" id= "winnerrScore2" > </div>
+               </div>
+               <div class = "roww">   
+                    <div class = "columnn" id= "winnerrname3" > </div> <div> <br> </div>
+                    <div class = "columnn" id= "winnerrScore3" ></div>
+                </div>
+               <div class = "roww">  
+                    <div class = "columnn" id= "winnerrname4" > </div> <div> <br> </div>
+                    <div class = "columnn" id= "winnerrScore4"> </div>
+               </div>
+               <div class = "roww"> 
+                    <div class = "columnn" id="winnerrname5" > </div> <div> <br> </div>
+                    <div class = "columnn" id="winnerrScore5" >   </div>
+               </div> 
+               <div class = "roww"> 
+                    <div class = "columnn" id="winnerrname6"  > </div> <div> <br> </div>
+                    <div class = "columnn" id="winnerrScore6">  </div>
+               </div>
+               <div class = "roww"> 
+                    <div class = "columnn" id= "winnerrname7" ></div> <div> <br> </div>
+                    <div class = "columnn" id= "winnerrScore7" > </div>
+               </div>
+               <div class = "roww">   
+                    <div class = "columnn" id= "winnerrname8" > </div> <div> <br> </div>
+                    <div class = "columnn" id= "winnerrScore8" ></div>
+                </div>
+               <div class = "roww">  
+                    <div class = "columnn" id= "winnerrname9" > </div> <div> <br> </div>
+                    <div class = "columnn" id= "winnerrScore9"> </div>
+               </div>
+           </div> 
+           <div> <br> </div>
+           <div class="myDiv"> 
+               <button class = "butt" id="resetbutton">Click To Reset Game</button>
+             
+               </div>
+
+          <div class = "formm">
+               <div> </div>
+               <div> <br> </div>
+               <form > 
+                    <p> <b> <u>Enter Unique Player Names</u> </p>                         <div> <br> </div>
+                    <!-- <div class="roww">  -->
+                 <div class="player1 ">
+                  <label for="fname">Player 1 name:</label>
+                  <div> <br> </div>
+                  <input type="text" id="fname" name="fname"></div>
+                  <div> <br> </div>
+                  <div> <br> </div>
+                  <div class="player2" >
+                  <label for="lname">Player 2 name:</label>
+                  <div> <br> </div>
+                  <input type="text" id="lname" name="lname"><br><br> </div>
+                  <div> <br> </div>
+                  
+                  <input type="button" class = "butt" id = "btn" value = "Submit " onclick=" winner_name()"/>
+                  <!-- <input type="text" id="lname" name="lname" value="Jeff"><br><br> -->
+                 <!-- </div> -->
+          </div>
+
+          </div>
+          
+          <br>
+          <!-- <div class="myDiv"> 
+          <button class = "butt" id="resetbutton">Click To Reset Game</button>
+        
+          </div> -->
+          <br>
+          
+      <script src="connect4_JS.js"
+        type="text/javascript"></script> 
+    </body>
+</html>
+
+ <!-- <div class = "image1"  id="winner-display">
+                    <div class = "roww" > 
+                         <div class = "columnn"> <p> 🎉🎉 The winner for this round is <span id="winner-name"></span> </p>  </div> <div> <br> </div>
+                         <div class = "columnn">  New high score is <span id="playerScore"></span></p>   </div> 
+                    </div>  
+            </div> -->
+            <!-- <div class = "roww" > 
+               <p> 🎉🎉 The winner for this round is <span id="winner-name"></span> </p>  </div> <div> <br> </div>        
+           </div>  
+           <div class = "roww" > 
+                <p>   New high score is <span id="playerScore"></span></p>   </div> 
+           </div>  -->

@@ -1,0 +1,398 @@
+@media screen and (min-width: 992px){
+.column {
+  width: 83px;
+  height: 83px;
+  margin: 0.5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  border: 2px black solid;
+  font-size: 85px;
+  background-color: rgb(225, 230, 231);
+  line-height: 85px;
+}
+.logox {
+  text-align: center;
+}
+.columnn {
+  width: 13px;
+  height: 13px;
+  margin: 0.5px;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  line-height: 85px;
+}
+
+.board{
+  position: relative ;
+    width: 630px;
+    height: 555px;
+    border: 3px black solid;
+    border-style: groove;
+    background-color: rgb(47, 89, 206);
+    margin: auto;
+    border-radius: 20px;
+}
+.scoreboard {
+  width: 220px;
+  height: 270px;
+  position: absolute;
+  border: 5px ridge violet;
+  top: 90px;
+  left: 650px;
+  background-color: wheat;
+  font-size: small;
+
+}
+.formm {
+  width: 200px;
+  height: 320px;
+  border: 5px ridge violet;
+  position: absolute;
+  top:85px;
+  left: -230px;
+   display: flex; 
+ justify-content: space-evenly;
+ background-color: rgb(122, 113, 95);
+ text-align: center;
+ font-family : 'Play', cursive;
+
+}
+
+.cell{
+  vertical-align: super;
+  position: absolute;
+}
+.row {
+    margin: 3.9px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.roww {
+  margin: 0.4px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.rowws {
+  margin: 0.4px;
+  align-items: center;
+}
+
+.roww1 {
+  background-color: rgb(155, 100, 202);
+  display: flex;
+
+}
+.roww2 {
+  border: 5px ridge violet;
+  justify-content: space-evenly;
+  height: 120px;
+}
+
+
+.marker {
+    width: 80px;
+    height: 80px;
+}
+
+#winner-display {
+    display: none;
+    background-color: rgb(117, 77, 129);
+    color: whitesmoke;
+    font-family: Play; 
+}
+#winnerScore{
+  display: none;
+  color: black;
+}
+#playerScore{
+  display: none;
+  color: white;
+  font-size: 50px;
+
+}
+#winnerrname{
+  display: none;
+  color: black;
+  font-size: 50px;
+  font-family: 'Play'; 
+}
+
+
+.bodyy {
+     word-spacing: 1 px;
+     /* padding-left: 200px; */
+     text-size-adjust: 50px;
+     letter-spacing : 5px;
+     font-family : 'Copperplate';
+     color: white;
+     animation : mymove 5s infinite ;
+}
+
+.parent {
+  position: relative ;
+}
+.image1 {
+  position: absolute;
+  border: 5px ridge rgb(123 72 175);
+  top: -7px;
+    font-size: 180%;
+    opacity: 0.90;
+    text-align: center;
+}
+
+.dii {
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  from {left: 450px;}
+  to {left: 700px;}
+}
+#reset-button{
+    margin-top: 10px;
+}
+.myDiv {
+    text-align: center;
+  }
+  .player1 {
+    color: white;
+    text-size-adjust: 2px;
+    letter-spacing : 5px;
+    line-height : 0.8;
+    word-spacing: 10px;
+    font-family : 'Brush Script MT', cursive;
+    text-shadow: 2px 2px 4px red;
+  }
+  .player2 {
+    color: white;
+    text-size-adjust: 2px;
+    letter-spacing : 5px;
+    line-height : 0.8;
+    word-spacing: 10px;
+    font-family : 'Brush Script MT', cursive;
+    text-shadow: 2px 2px 4px yellow;
+  }
+  .scoreboardPlayers {
+    color:black;
+    text-size-adjust: 1px;
+    letter-spacing : 5px;
+    line-height : 0.8;
+    word-spacing: 10px;
+    font-family : 'Play', cursive;
+    text-align: center;
+    text-decoration: wavy;
+  }
+  .butt {
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+}
+
+
+
+@media screen and (max-width: 992px){
+  .board{
+    position: relative ;
+      width: 590px;
+      height: 495px;
+      border: 3px black solid;
+      border-style: groove;
+      background-color: rgb(47, 89, 206);
+      margin: auto;
+      border-radius: 20px;
+      box-shadow: 2px 2px;
+  }
+  .logox {
+    text-align: center;
+  }
+  .scoreboard {
+    width: 180px;
+    height: 270px;
+    position: absolute;
+    border: 5px ridge violet;
+    top: 90px;
+    left: 600px;
+    background-color: wheat;
+    font-size: x-small;
+    text-align: center;
+  }
+  .scoreboardPlayers {
+    color:black;
+    text-size-adjust: 1px;
+    letter-spacing : 5px;
+    line-height : 0.8;
+    word-spacing: 5px;
+    font-family : 'Play', cursive;
+    text-align: center;
+    text-decoration: wavy;
+  }
+  .formm {
+    width: 180px;
+    height: 200px;
+    border: 5px ridge violet;
+    position: absolute;
+    top:130px;
+    left: -200px;
+     display: flex; 
+   justify-content: space-evenly;
+   background-color: rgb(122, 113, 95);
+   text-align: center;
+   font-size: x-small;
+   font-family : 'Play', cursive;
+  
+  }
+  .column {
+    width: 73px;
+    height: 73px;
+    margin: 0.5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    border: 2px black solid;
+    font-size: 75px;
+    background-color: rgb(225, 230, 231);
+    line-height: 75px;
+  }
+  .columnn {
+    width: 10px;
+    height: 13px;
+    margin: 0.5px;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 60px;
+  }
+  
+.cell{
+  vertical-align: super;
+  position: absolute;
+}
+.row {
+    margin: 3.9px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.roww {
+  margin: 0.4px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.rowws {
+  margin: 0.2px;
+  align-items: center;
+}
+
+.roww1 {
+  background-color: rgb(155, 100, 202);
+  display: flex;
+
+}
+.roww2 {
+  border: 5px ridge violet;
+  justify-content: space-evenly;
+  height: 100px;
+}
+
+  .butt {
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 12px;
+    padding: 4px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  #playerScore{
+    display: none;
+    color: white;
+    font-size: 40px;
+  
+  }
+  
+  #winnerrname{
+    display: none;
+    color: black;
+    font-size: 40px;
+    font-family: 'Play'; 
+  }
+  .bodyy {
+     word-spacing: 1 px;
+     text-size-adjust: 50px;
+     letter-spacing : 5px;
+     font-family : 'Copperplate';
+     color: white;
+     animation : mymove 5s infinite ;
+   
+}
+  
+#reset-button{
+  margin-top: 7px;
+}
+.myDiv {
+  text-align: center;
+}
+.player1 {
+  color: white;
+  text-size-adjust: 2px;
+  letter-spacing : 4px;
+  line-height : 0.8;
+  word-spacing: 8 px;
+  font-family : 'Brush Script MT', cursive;
+  text-shadow: 2px 2px 4px red;
+}
+.player2 {
+  color: white;
+  text-size-adjust: 2px;
+  letter-spacing : 4px;
+  line-height : 0.8;
+  word-spacing: 8px;
+  font-family : 'Brush Script MT', cursive;
+  text-shadow: 2px 2px 4px yellow;
+}
+.marker {
+  width: 80px;
+  height: 80px;
+}
+
+#winner-display {
+  display: none;
+  background-color: rgb(117, 77, 129);
+  color: whitesmoke;
+  font-family: Play; 
+}
+.parent {
+  position: relative ;
+}
+.image1 {
+  position: absolute;
+  border: 5px ridge rgb(123 72 175);
+  top: -7px;
+    font-size: 150%;
+    opacity: 0.90;
+    text-align: center;
+}
+
+.dii {
+ 
+  position: relative;
+  animation: mymove 5s infinite;
+}
+@keyframes mymove {
+  from {left: 280px;}
+  to {left: 450px;}
+}
+  }
